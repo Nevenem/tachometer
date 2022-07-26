@@ -4,7 +4,7 @@ library(flexdashboard)
 library(dplyr)
 source("tachometer_data_prep.R")
 
-all_data <- read.table(file = "Data_Nevena_OneRow.csv", head = TRUE, sep = ",")
+all_data <- read.table(file = "Data_Nevena_OneRowHeader.csv", head = TRUE, sep = ",")
 
 get_factor_values <- function(factor) {
   all_factors <- read.table(file = "factors.csv", head = TRUE, sep = ",")
